@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Factory Gear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="min-h-screen bg-gray-100">
+    <!-- Header -->
+    <header class="fixed w-full bg-[#c0c0c0f7] text-white z-50 transition-all duration-300 py-6" id="main-header">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold animate-fadeIn">Factory Gear</a>
+    
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex gap-8">
+                <li><a href="../index.html" class="hover:text-gray-300 transition-colors">Home</a></li>
+                <li><a href="" class="hover:text-gray-300 transition-colors">Services</a></li>
+                <li><a href="product.html" class="hover:text-gray-300 transition-colors">Products</a></li>
+                <li><a href="contact.html" class="hover:text-gray-300 transition-colors">Contact</a></li>
+            </ul>
+    
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+    
+        <!-- Mobile Sidebar -->
+        <div class="md:hidden fixed inset-y-0 left-0 w-64 bg-[#c0c0c0f7] transform transition-transform duration-300 -translate-x-full" id="mobile-sidebar">
+            <div class="flex justify-end p-4">
+                <button id="close-sidebar" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="flex flex-col gap-4 p-4">
+                <li><a href="../index.html" class="block py-2 hover:text-gray-300 transition-colors mobile-link">Home</a></li>
+                <li><a href="" class="block py-2 hover:text-gray-300 transition-colors mobile-link">Services</a></li>
+                <li><a href="product.html" class="block py-2 hover:text-gray-300 transition-colors mobile-link">Products</a></li>
+                <li><a href="contact.html" class="block py-2 hover:text-gray-300 transition-colors mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Services Header -->
+    <div class="bg-gray-800 text-white py-32 pt-40"> <!-- Increased padding for height -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 animate__animated animate__fadeIn">Our Services</h1>
+            <!-- Increased font size -->
+            <p class="text-xl max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
+                <!-- Increased font size -->
+                We provide comprehensive industrial solutions to keep your business running efficiently and safely.
+            </p>
+        </div>
+    </div>
+
+    <!-- Services Overview -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16 animate__animated animate__fadeIn animate__delay-1s">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">How We Can Help Your Business</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                With over 20 years of experience in the industrial sector, our team of experts provides top-quality
+                services tailored to your specific needs.
+            </p>
+        </div>
+
+        <!-- Main Services -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
+            <!-- Service 1 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden animate__animated animate__fadeIn animate__delay-1s">
+                <div class="h-56 relative">
+                    <img src="../images/image5.png" alt="Industrial Products" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Industrial Products</h3>
+                    <p class="text-gray-600 mb-4">
+                        We offer a wide range of high-quality industrial products designed for durability and
+                        performance in demanding environments.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Premium quality tools and equipment</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Customized solutions for specific needs</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Competitive pricing and bulk discounts</span>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="inline-block bg-gray-800 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition-colors">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden animate__animated animate__fadeIn animate__delay-2s">
+                <div class="h-56 relative">
+                    <img src="../images/image4.jpg" alt="Robot Maintenance" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Robot Maintenance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our specialized technicians provide comprehensive maintenance and repair services for all types
+                        of industrial robots.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Preventive maintenance programs</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Emergency repair services</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Performance optimization</span>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="inline-block bg-gray-800 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition-colors">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden animate__animated animate__fadeIn animate__delay-3s">
+                <div class="h-56 relative">
+                    <img src="../images/image6.jpg" alt="Forklift Service" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Forklift Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        We provide professional maintenance and repair services for all forklift brands to ensure
+                        optimal performance and safety.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Routine maintenance and inspections</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Parts replacement and upgrades</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2"></i>
+                            <span>Safety compliance checks</span>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="inline-block bg-gray-800 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition-colors">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate__animated animate__fadeIn" data-scroll-animation>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Additional Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Beyond our core offerings, we provide specialized services to meet your unique industrial needs.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Additional Service 1 -->
+                <div class="flex bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeIn"
+                    data-scroll-animation>
+                    <div class="flex-shrink-0 mr-4">
+                        <div class="bg-gray-800 p-3 rounded-full text-white">
+                            <i data-lucide="tool" class="h-6 w-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Equipment Installation</h3>
+                        <p class="text-gray-600">
+                            Professional installation of industrial equipment by our certified technicians, ensuring
+                            proper setup and optimal performance from day one.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Additional Service 2 -->
+                <div class="flex bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeIn animate__delay-1s"
+                    data-scroll-animation>
+                    <div class="flex-shrink-0 mr-4">
+                        <div class="bg-gray-800 p-3 rounded-full text-white">
+                            <i data-lucide="settings" class="h-6 w-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">System Optimization</h3>
+                        <p class="text-gray-600">
+                            Analysis and optimization of your industrial systems to improve efficiency, reduce downtime,
+                            and maximize productivity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Additional Service 3 -->
+                <div class="flex bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeIn animate__delay-2s"
+                    data-scroll-animation>
+                    <div class="flex-shrink-0 mr-4">
+                        <div class="bg-gray-800 p-3 rounded-full text-white">
+                            <i data-lucide="users" class="h-6 w-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Staff Training</h3>
+                        <p class="text-gray-600">
+                            Comprehensive training programs for your staff on equipment operation, maintenance
+                            procedures, and safety protocols.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Additional Service 4 -->
+                <div class="flex bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeIn animate__delay-3s"
+                    data-scroll-animation>
+                    <div class="flex-shrink-0 mr-4">
+                        <div class="bg-gray-800 p-3 rounded-full text-white">
+                            <i data-lucide="clipboard-check" class="h-6 w-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Safety Inspections</h3>
+                        <p class="text-gray-600">
+                            Regular safety inspections and compliance checks to ensure your facility meets all industry
+                            regulations and standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16 animate__animated animate__fadeIn" data-scroll-animation>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Service Process</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We follow a structured approach to ensure high-quality service delivery and customer satisfaction.
+            </p>
+        </div>
+
+        <div class="relative">
+            <!-- Process Timeline -->
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
+
+            <div class="space-y-12 relative">
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeIn"
+                    data-scroll-animation>
+                    <div class="md:w-1/2 md:pr-12 md:text-right">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Initial Consultation</h3>
+                        <p class="text-gray-600">
+                            We begin with a thorough consultation to understand your specific needs, challenges, and
+                            goals.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:w-1/2 md:pl-12 flex justify-start md:justify-start">
+                        <div
+                            class="bg-gray-800 rounded-full h-12 w-12 flex items-center justify-center text-white text-xl font-bold z-10">
+                            1
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeIn animate__delay-1s"
+                    data-scroll-animation>
+                    <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+                        <div
+                            class="bg-gray-800 rounded-full h-12 w-12 flex items-center justify-center text-white text-xl font-bold z-10 ml-auto">
+                            2
+                        </div>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:w-1/2 md:pl-12 order-1 md:order-2">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Assessment & Planning</h3>
+                        <p class="text-gray-600">
+                            Our experts conduct a detailed assessment and develop a customized service plan tailored to
+                            your requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeIn animate__delay-2s"
+                    data-scroll-animation>
+                    <div class="md:w-1/2 md:pr-12 md:text-right">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Service Implementation</h3>
+                        <p class="text-gray-600">
+                            Our skilled technicians execute the service plan with precision, adhering to industry best
+                            practices and safety standards.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:w-1/2 md:pl-12 flex justify-start md:justify-start">
+                        <div
+                            class="bg-gray-800 rounded-full h-12 w-12 flex items-center justify-center text-white text-xl font-bold z-10">
+                            3
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeIn animate__delay-3s"
+                    data-scroll-animation>
+                    <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+                        <div
+                            class="bg-gray-800 rounded-full h-12 w-12 flex items-center justify-center text-white text-xl font-bold z-10 ml-auto">
+                            4
+                        </div>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:w-1/2 md:pl-12 order-1 md:order-2">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Quality Assurance</h3>
+                        <p class="text-gray-600">
+                            We conduct thorough testing and quality checks to ensure all services meet our high
+                            standards and your expectations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeIn animate__delay-4s"
+                    data-scroll-animation>
+                    <div class="md:w-1/2 md:pr-12 md:text-right">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Follow-up & Support</h3>
+                        <p class="text-gray-600">
+                            We provide ongoing support and scheduled follow-ups to ensure continued satisfaction and
+                            optimal performance.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:w-1/2 md:pl-12 flex justify-start md:justify-start">
+                        <div
+                            class="bg-gray-800 rounded-full h-12 w-12 flex items-center justify-center text-white text-xl font-bold z-10">
+                            5
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate__animated animate__fadeIn" data-scroll-animation>
+                <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-lg max-w-3xl mx-auto text-gray-300">
+                    Don't just take our word for it. Here's what our satisfied clients have to say about our services.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-700 rounded-lg p-6 animate__animated animate__fadeIn" data-scroll-animation>
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        "Factory Gear's robot maintenance service has significantly reduced our downtime and increased
+                        productivity. Their technicians are knowledgeable, efficient, and always available when we need
+                        them."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-500 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">abdelkhalek</h4>
+                            <p class="text-gray-400 text-sm">Operations Manager, TechManufacturing Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-700 rounded-lg p-6 animate__animated animate__fadeIn animate__delay-1s"
+                    data-scroll-animation>
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        "We've been using Factory Gear's forklift service for over five years, and they've consistently
+                        delivered exceptional quality. Their preventive maintenance program has saved us thousands in
+                        potential repair costs."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-500 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Salma</h4>
+                            <p class="text-gray-400 text-sm">Logistics Director, Global Distribution Co.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-700 rounded-lg p-6 animate__animated animate__fadeIn animate__delay-2s"
+                    data-scroll-animation>
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star-half" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        "The quality of industrial products from Factory Gear is unmatched. Their team helped us select
+                        the right equipment for our specific needs, and the after-sales support has been outstanding."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-500 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Narjis</h4>
+                            <p class="text-gray-400 text-sm">Procurement Manager, Innovative Industries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <p>&copy; 2023 Factory Gear. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/services.js"></script>
+</body>
+
+</html>

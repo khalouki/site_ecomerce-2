@@ -1,0 +1,63 @@
+  <!-- Hero Section with Image Carousel -->
+    <section id="home" class="relative h-screen overflow-hidden">
+        <!-- Carousel Container -->
+        <div class="hero-carousel absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out"></div>
+    
+        <!-- Content Overlay -->
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center text-white px-4">
+            <div class="max-w-3xl animate-fadeInUp">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Industrial Solutions for Your Business
+                </h1>
+                <p class="text-lg md:text-xl mb-8">
+                    Expert maintenance for robots and forklifts, plus quality industrial products
+                </p>
+                <button class="bg-gray-800 hover:scale-105 transition-transform px-8 py-4 rounded text-lg font-medium">
+                    <a href="#products" class="hover:text-gray-300 transition-colors">Shop Now</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    // Array of image URLs
+    const images = [
+        'image1.jpeg',
+        'image2.jpg',
+        'image3.jpg',
+        'image4.jpg'
+    ];
+
+    const heroCarousel = document.querySelector('.hero-carousel');
+    let currentSlide = 0;
+
+    // Function to create and append slides
+    function createSlides() {
+        images.forEach((image, index) => {
+            const slide = document.createElement('div');
+            slide.classList.add('carousel-slide', 'absolute', 'inset-0', 'bg-cover', 'bg-center', 'transition-opacity', 'duration-1000', 'ease-in-out');
+            slide.style.backgroundImage = `url('${image}')`;
+            slide.style.opacity = index === 0 ? 1 : 0; // Show the first slide initially
+            heroCarousel.appendChild(slide);
+        });
+    }
+
+    // Function to show a specific slide
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.carousel-slide');
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? 1 : 0;
+        });
+    }
+
+    // Function to move to the next slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % images.length;
+        showSlide(currentSlide);
+    }
+
+    // Initialize the carousel
+    createSlides();
+
+    // Automatically change slides every 5 seconds
+    setInterval(nextSlide, 5000);
